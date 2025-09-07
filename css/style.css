@@ -147,3 +147,18 @@
   min-height: 500px;
   background: transparent;
 }
+
+/* parallax 02 */
+.parallax-bg {
+  min-height: 500px;
+  background: transparent;
+}
+
+/* parallax 03 */
+.jarallax {
+  height: 600px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
