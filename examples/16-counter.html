@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>J query</title>
+        <!-- CSS LINKS -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/media.css" />
+    </head>
+    <body>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12">
+                    <span class="num">0</span>
+                </div>
+            </div>
+        </div>
+        <!-- JS LINKS -->
+        <script src="../js/jquery-3.7.1.min.js"></script>
+        <script src="counter-3/jquery.numscroll.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            $(function () {
+                $(".num").numScroll({
+                    number: 123456,
+                });
+            });
+        </script>
+    </body>
+</html>

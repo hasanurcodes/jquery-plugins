@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>J query</title>
+        <!-- CSS LINKS -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="filtering/mixitup.custom.css" />
+        <link rel="stylesheet" href="../css/media.css" />
+    </head>
+    <body>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="controls">
+                        <button type="button" class="control" data-filter="all">All</button>
+                        <button type="button" class="control" data-filter=".green">Green</button>
+                        <button type="button" class="control" data-filter=".blue">Blue</button>
+                        <button type="button" class="control" data-filter=".pink">Pink</button>
+                        <button type="button" class="control" data-filter="none">None</button>
+
+                        <button type="button" class="control" data-sort="default:asc">Asc</button>
+                        <button type="button" class="control" data-sort="default:desc">Desc</button>
+                    </div>
+
+                    <div class="container">
+                        <div class="mix green"></div>
+                        <div class="mix green"></div>
+                        <div class="mix blue"></div>
+                        <div class="mix pink"></div>
+                        <div class="mix green"></div>
+                        <div class="mix blue"></div>
+                        <div class="mix pink"></div>
+                        <div class="mix blue"></div>
+
+                        <div class="gap"></div>
+                        <div class="gap"></div>
+                        <div class="gap"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- JS LINKS -->
+        <script src="../js/jquery-3.7.1.min.js"></script>
+        <script src="filtering/mixitup.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var containerEl = document.querySelector(".container");
+
+            var mixer = mixitup(containerEl);
+        </script>
+    </body>
+</html>
